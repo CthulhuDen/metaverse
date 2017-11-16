@@ -56,7 +56,7 @@ console_result getaccount::invoke (std::ostream& output,
     boost::split(results, mnemonic, boost::is_any_of(" "));
 
     if (*results.rbegin() != argument_.last_word){
-        throw argument_dismatch_exception{"last word not matching."};
+        //throw argument_dismatch_exception{"last word not matching."};
     }
 
     pt::ptree root;
